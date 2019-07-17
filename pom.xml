@@ -7,6 +7,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>FitnessTracker Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+  	<java.version>11</java.version>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -17,7 +20,7 @@
     <dependency>
     	<groupId>org.springframework</groupId>
     	<artifactId>spring-webmvc</artifactId>
-    	<version>3.2.0.RELEASE</version>
+    	<version>5.0.2.RELEASE</version>
     </dependency>
     <dependency>
     	<groupId>javax.servlet</groupId>
@@ -34,5 +37,18 @@
   </dependencies>
   <build>
     <finalName>FitnessTracker</finalName>
+  <plugins>
+  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+  
+  </plugins>
   </build>
+  
 </project>
