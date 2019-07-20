@@ -10,6 +10,8 @@
 </head>
 <body>
 <h1>Add Minutes Exercised</h1>
+
+Language : <a href="?language=en">English</a> | <a href="?language=ar">عربي</a>
 <form:form modelAttribute="exercise">
 	<table>
 	<tr>
