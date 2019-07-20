@@ -25,5 +25,7 @@ Language : <a href="?language=en">English</a> | <a href="?language=ar">عربي<
 	</tr>
 	</table>
 </form:form>
+
+<h1>Goal for th Day: ${goal.minutes}</h1>
 </body>
 </html>
